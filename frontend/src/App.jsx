@@ -1,12 +1,11 @@
-import { Text } from "@chakra-ui/react"
 import Nav from "./components/Navbar/Nav"
-
+import { Outlet } from "react-router-dom"
 function App() {
 
   return (
     <>
     <Nav/>
-      <Text as={"h1"}>Hello world</Text>
+    <Outlet/>
     </>
   )
 }
