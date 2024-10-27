@@ -21,6 +21,7 @@ import { Link as ReactRouterLink } from 'react-router-dom'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import { useAuthStore } from '../../store/useAuthStore'
 import { useNavigate } from 'react-router-dom'
+import CreateBookModal from '../Book/CreateBookModal'
 
 
 export default function Nav() {
@@ -43,6 +44,7 @@ export default function Nav() {
                             <Button onClick={toggleColorMode}>
                                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
                             </Button>
+                            {isLoggedIn && <CreateBookModal/>}
                             {
                                 isLoggedIn ? (
 

@@ -8,7 +8,7 @@ import Register from './routes/Register.jsx';
 import Login from './routes/Login.jsx';
 import Home from './routes/Home.jsx';
 
-export const BASEURL= "http://localhost:5000/api/";
+export const BASEURL= "http://localhost:5000/api";
 
 const router = createBrowserRouter([
   {

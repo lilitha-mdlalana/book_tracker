@@ -50,7 +50,7 @@ export default function Register() {
             return;
         }
         try {
-            const response = await axios.post(BASEURL + "register", {
+            const response = await axios.post(BASEURL + "/register", {
                 username,
                 password
             });

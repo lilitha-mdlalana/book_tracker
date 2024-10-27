@@ -31,7 +31,7 @@ export default function Login() {
     const handleLogin = async (event) => {
         event.preventDefault();
         try{
-            const response = await axios.post(BASEURL + "login",{username,password});
+            const response = await axios.post(BASEURL + "/login",{username,password});
             const {access_token} = response.data;
 
             setUser(username,access_token)
